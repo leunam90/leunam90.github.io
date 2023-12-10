@@ -1,17 +1,141 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Mi Portafolio</title>
+  <!-- Enlace al archivo CSS de Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    /* Puedes añadir estilos personalizados aquí */
+  </style>
 </head>
-<body class="bg-gray-100">
-  <div class="flex justify-between px-4 pt-4 bg-white">
-    <h2 class="font-bold text-4xl">SuiteStacks</h2>
-    <h3 class="font-bold text-4xl">Portafolio</h3>
-  </div>
-  <div class="">
-    <h2>Hello world</h2>
-  </div>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Barra de navegación -->
+  <nav class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <a href="#" class="text-xl font-bold">Mi Portafolio</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
+        <li><a href="#proyectos" class="hover:text-gray-300">Proyectos</a></li>
+        <li><a href="#sobre-mi" class="hover:text-gray-300">Sobre mí</a></li>
+        <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container mx-auto py-8">
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="mb-8">
+      <h2 class="text-3xl font-bold mb-4">Mis Proyectos</h2>
+      <!-- Aquí puedes listar tus proyectos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ejemplo de tarjeta de proyecto -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 1</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- Otras tarjetas de proyectos -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 2</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 3</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- ... -->
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ejemplo de tarjeta de proyecto -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 1</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- Otras tarjetas de proyectos -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 2</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 3</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- ... -->
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ejemplo de tarjeta de proyecto -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 1</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- Otras tarjetas de proyectos -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 2</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold mb-2">Proyecto 3</h3>
+          <p>Descripción breve del proyecto.</p>
+          <a href="#" class="mt-2 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Ver
+            más</a>
+        </div>
+        <!-- ... -->
+      </div>
+    </section>
+
+    <!-- Sección de Sobre Mí -->
+    <section id="sobre-mi" class="mb-8">
+      <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+      <p>
+        Computer Systems Engineer with 8+ years of experience in software development, especially in backend
+        development.
+      </p>
+      <p>
+        I have experience in the development of rest APIs with PHP Laravel and Ruby on Rails.
+      </p>
+      <p>
+        Experience in customizing modules for NetSuite using its SuiteScript framework, performing integrations between
+        NetSuite and different ecommerce platforms.
+      </p>
+      <p>
+        Experience and knowledge in the integration of electronic invoicing systems for Mexico.
+      </p>
+      <p>
+        Knowledge in frontend development with React.
+      </p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+      <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+      <!-- Formulario de contacto o información de contacto -->
+      <p>Manuel Cervera</p>
+      <p>Telefono: 9995538130</p>
+      <p>mcervera9001@gmail.com</p>
+      <p>https://www.linkedin.com/in/mcervera90/</p>
+    </section>
+  </main>
 </body>
+
 </html>
