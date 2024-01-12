@@ -2,101 +2,180 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Manuel Cervera - Currículum</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Cervera</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Caveat:wght@500&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ["Inter", "sans-serif"],
+                        caveat: ["Caveat", "cursive"],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
 
-<body class="font-sans bg-gray-100">
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4 text-center">
+        <!-- Foto de perfil -->
+        <img src="assets/img/profile_picture.jpeg" alt="Foto de perfil" class="mx-auto rounded-full w-20 h-20 mb-4" />
 
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <div class="flex items-center justify-center space-x-4">
-            <img src="assets/img/profile-image.jpeg" alt="Foto de perfil"
-                class="rounded-full w-16 h-16 border-4 border-gray-200">
-            <div>
-                <h1 class="text-xl font-semibold text-gray-800">Manuel Cervera</h1>
-                <p class="text-sm text-gray-600">Sr Backend Associate | Computer Systems Engineer | Ruby on Rails Developer | Netsuite
-                    Developer | PHP Laravel</p>
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Manuel Cervera Basto</h1>
+            <p class="text-lg text-gray-600">
+                Sr Backend Associate | Computer Systems Engineer | Ruby on Rails
+                Developer | Netsuite Developer | PHP Laravel
+            </p>
+        </header>
+
+        <section class="rounded p-8">
+            <h2 class="text-2xl font-bold mb-4">About me</h2>
+            <p class="text-gray-700">
+                Computer Systems Engineer with 8+ years of experience in software
+                development.
+            </p>
+            <p class="text-gray-700">
+                Experience in the development of rest APIs with PHP Laravel and Ruby
+                on Rails.
+            </p>
+            <p class="text-gray-700">
+                Experience in customizing modules for NetSuite using its SuiteScript
+                framework, performing integrations between NetSuite and different
+                ecommerce platforms.
+            </p>
+            <p class="text-gray-700">
+                Experience and knowledge in the integration of electronic invoicing
+                systems for Mexico.
+            </p>
+        </section>
+
+        <section class="rounded p-8 mt-8">
+            <h2 class="text-2xl font-bold mb-4">Experiencia Laboral</h2>
+            <div class="flex items-center mb-4">
+                <div class="w-full">
+                    <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
+                        <div class="w-full max-w-3xl mx-auto">
+                            <!-- Vertical Timeline #1 -->
+                            <div class="-my-6">
+                                <!-- Item #1 -->
+                                <div class="relative pl-8 sm:pl-32 py-6 group">
+                                    <!-- Purple label -->
+                                    <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
+                                        MeruImports
+                                    </div>
+                                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                                    <div
+                                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                                        <time
+                                            class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                                            2020</time>
+                                        <div class="text-xl font-bold text-slate-900">
+                                            Acme was founded in Milan, Italy
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                    <div class="text-slate-500">
+                                        Pretium lectus quam id leo. Urna et pharetra pharetra
+                                        massa massa. Adipiscing enim eu neque aliquam vestibulum
+                                        morbi blandit cursus risus.
+                                    </div>
+                                </div>
+
+                                <!-- Item #2 -->
+                                <div class="relative pl-8 sm:pl-32 py-6 group">
+                                    <!-- Purple label -->
+                                    <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
+                                        The milestone
+                                    </div>
+                                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                                    <div
+                                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                                        <time
+                                            class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                                            2021</time>
+                                        <div class="text-xl font-bold text-slate-900">
+                                            Reached 5K customers
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                    <div class="text-slate-500">
+                                        Pretium lectus quam id leo. Urna et pharetra pharetra
+                                        massa massa. Adipiscing enim eu neque aliquam vestibulum
+                                        morbi blandit cursus risus.
+                                    </div>
+                                </div>
+
+                                <!-- Item #3 -->
+                                <div class="relative pl-8 sm:pl-32 py-6 group">
+                                    <!-- Purple label -->
+                                    <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
+                                        The acquisitions
+                                    </div>
+                                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                                    <div
+                                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                                        <time
+                                            class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                                            2022</time>
+                                        <div class="text-xl font-bold text-slate-900">
+                                            Acquired various companies, inluding Technology Inc.
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                    <div class="text-slate-500">
+                                        Pretium lectus quam id leo. Urna et pharetra pharetra
+                                        massa massa. Adipiscing enim eu neque aliquam vestibulum
+                                        morbi blandit cursus risus.
+                                    </div>
+                                </div>
+
+                                <!-- Item #4 -->
+                                <div class="relative pl-8 sm:pl-32 py-6 group">
+                                    <!-- Purple label -->
+                                    <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">
+                                        The IPO
+                                    </div>
+                                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                                    <div
+                                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                                        <time
+                                            class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                                            2023</time>
+                                        <div class="text-xl font-bold text-slate-900">
+                                            Acme went public at the New York Stock Exchange
+                                        </div>
+                                    </div>
+                                    <!-- Content -->
+                                    <div class="text-slate-500">
+                                        Pretium lectus quam id leo. Urna et pharetra pharetra
+                                        massa massa. Adipiscing enim eu neque aliquam vestibulum
+                                        morbi blandit cursus risus.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Vertical Timeline #1 -->
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-3">About me</h2>
-        <p class="text-gray-700">
-            Computer Systems Engineer with 8+ years of experience in software development, especially in backend
-            development.
-        </p>
-
-        <p class="text-gray-700">
-            I have experience in the development of rest APIs with PHP Laravel and Ruby on Rails.</p>
-        <p class="text-gray-700">
-            Experience in customizing modules for NetSuite using its SuiteScript framework,
-            performing integrations between NetSuite and different ecommerce platforms.
-        </p>
-        <p class="text-gray-700">
-            Experience and knowledge in the integration of electronic invoicing systems for Mexico.
-        </p>
-        <p class="text-gray-700">
-            Knowledge in frontend development with React.
-        </p>
-        <p class="text-gray-700">
-            <ul class="list-disc pl-5 text-gray-700">
-                <li>Love phishing</li>
-                <li>Amateur Diver</li>
-            </ul>
-        </p>
-
-        <p class="text-gray-700">
-            “Stay Hungry, Stay Foolish”. Steve Jobs
-        </p>
-    </section>
-
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-3">Experience</h2>
-
-        <div class="space-y-6">
-            <!-- Empleo actual -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
-                    <p class="text-white">Now</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800">Sr Backend Associate</h3>
-                    <p class="text-sm text-gray-600">Meru | 2022 - Presente</p>
-                </div>
-            </div>
-
-            <!-- Empleo anterior -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
-                    <p class="text-white">2020-2022</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800">Netsuite Developer</h3>
-                    <p class="text-sm text-gray-600">BeExponential</p>
-                </div>
-            </div>
-
-            <!-- Otros empleos -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
-                    <p class="text-white">2018-2020</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800">FullStack Developer</h3>
-                    <p class="text-sm text-gray-600">Palladium Hotel Group | 2018 - 2020</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-3">Proyectos</h2>
-        <!-- Detalles sobre los proyectos -->
-    </section>
-
+        <section class="rounded p-8 mt-8">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <p class="text-gray-700">
+                Computer Systems Engineer | Instituto Tecnológico de Mérida | 2013
+            </p>
+        </section>
+    </div>
 </body>
 
 </html>
