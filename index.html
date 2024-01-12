@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Manuel Cervera - Currículum</title>
 </head>
-<body>
 
-    <header>
-        <h1>Tu Nombre</h1>
-        <p>Desarrollador Web</p>
-    </header>
+<body class="font-sans bg-gray-100">
 
-    <section id="about">
-        <h2>Acerca de Mí</h2>
-        <p>Breve descripción sobre ti.</p>
+    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
+        <div class="flex items-center justify-center space-x-4">
+            <img src="assets/img/profile-image.jpeg" alt="Foto de perfil"
+                class="rounded-full w-16 h-16 border-4 border-gray-200">
+            <div>
+                <h1 class="text-xl font-semibold text-gray-800">Manuel Cervera</h1>
+                <p class="text-sm text-gray-600">Sr Backend Associate | Computer Systems Engineer | Ruby on Rails Developer | Netsuite
+                    Developer | PHP Laravel</p>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <!-- Aquí puedes agregar información sobre tus proyectos -->
+    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-3">About me</h2>
+        <p class="text-gray-700">
+            Computer Systems Engineer with 8+ years of experience in software development, especially in backend
+            development.
+        </p>
+
+        <p class="text-gray-700">
+            I have experience in the development of rest APIs with PHP Laravel and Ruby on Rails.</p>
+        <p class="text-gray-700">
+            Experience in customizing modules for NetSuite using its SuiteScript framework,
+            performing integrations between NetSuite and different ecommerce platforms.
+        </p>
+        <p class="text-gray-700">
+            Experience and knowledge in the integration of electronic invoicing systems for Mexico.
+        </p>
+        <p class="text-gray-700">
+            Knowledge in frontend development with React.
+        </p>
+        <p class="text-gray-700">
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Love phishing</li>
+                <li>Amateur Diver</li>
+            </ul>
+        </p>
+
+        <p class="text-gray-700">
+            “Stay Hungry, Stay Foolish”. Steve Jobs
+        </p>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: tu@email.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">tuusuario</a></p>
-        <!-- Otros medios de contacto -->
+    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-3">Experience</h2>
+
+        <div class="space-y-6">
+            <!-- Empleo actual -->
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
+                    <p class="text-white">Now</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Sr Backend Associate</h3>
+                    <p class="text-sm text-gray-600">Meru | 2022 - Presente</p>
+                </div>
+            </div>
+
+            <!-- Empleo anterior -->
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
+                    <p class="text-white">2020-2022</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Netsuite Developer</h3>
+                    <p class="text-sm text-gray-600">BeExponential</p>
+                </div>
+            </div>
+
+            <!-- Otros empleos -->
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-500 rounded-full h-8 w-8 flex items-center justify-center">
+                    <p class="text-white">2018-2020</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">FullStack Developer</h3>
+                    <p class="text-sm text-gray-600">Palladium Hotel Group | 2018 - 2020</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Tu Nombre</p>
-    </footer>
+    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-3">Proyectos</h2>
+        <!-- Detalles sobre los proyectos -->
+    </section>
 
 </body>
+
 </html>
