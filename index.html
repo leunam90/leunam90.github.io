@@ -1,67 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <!-- Link a CDN de Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Puedes agregar estilos adicionales aquí */
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Mi Portafolio</title>
 </head>
+<body>
 
-<body class="font-sans bg-gray-100 text-gray-900">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Portafolio</h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-gray-600">Proyectos</a></li>
-                    <li><a href="#" class="hover:text-gray-600">Acerca de</a></li>
-                    <li><a href="#" class="hover:text-gray-600">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>Tu Nombre</h1>
+        <p>Desarrollador Web</p>
     </header>
 
-    <main class="container mx-auto my-8 px-4">
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold mb-4">Últimos Proyectos</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Aquí van tus proyectos -->
-                <!-- Ejemplo de tarjeta de proyecto -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <img src="https://via.placeholder.com/400" alt="Project" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Nombre del Proyecto</h3>
-                        <p class="text-gray-700">Breve descripción del proyecto.</p>
-                        <a href="#" class="block text-blue-600 mt-2 hover:underline">Ver más</a>
-                    </div>
-                </div>
-                <!-- Fin del ejemplo de tarjeta de proyecto -->
-            </div>
-        </section>
+    <section id="about">
+        <h2>Acerca de Mí</h2>
+        <p>Breve descripción sobre ti.</p>
+    </section>
 
-        <section>
-            <h2 class="text-3xl font-bold mb-4">Sobre mí</h2>
-            <div class="flex flex-col lg:flex-row lg:space-x-8">
-                <div class="lg:w-1/2 mb-4 lg:mb-0">
-                    <img src="https://via.placeholder.com/600" alt="About" class="w-full h-auto rounded-lg shadow-md">
-                </div>
-                <div class="lg:w-1/2">
-                    <h3 class="text-2xl font-bold mb-2">¡Hola! Soy...</h3>
-                    <p class="text-gray-700 mb-4">Una breve descripción sobre ti y tu trabajo.</p>
-                    <a href="#" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Contactarme</a>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <!-- Aquí puedes agregar información sobre tus proyectos -->
+    </section>
 
-    <footer class="bg-gray-200 py-4 text-center">
-        <p>© 2023 Portafolio. Todos los derechos reservados.</p>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: tu@email.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">tuusuario</a></p>
+        <!-- Otros medios de contacto -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre</p>
     </footer>
-</body>
 
+</body>
 </html>
